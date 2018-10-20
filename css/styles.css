@@ -196,11 +196,6 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-.restaurant-img {
-	width: 100%;
-	height: auto;
-}
-
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: fixed;
