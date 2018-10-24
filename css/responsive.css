@@ -22,6 +22,11 @@
   	min-width: auto; /* prevent overflow from parent div */
   	transition: all 1s;
   }
+
+#restaurant-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
@@ -61,5 +66,10 @@
   max-width: 100%;
   min-height: 248px;
   min-width: 100%;
+}
+
+#restaurant-img {
+  width: 100%;
+  height: auto;
 }
 }
