@@ -1,3 +1,4 @@
+// service worker tutorial https://www.youtube.com/watch?v=ksXwaWHCW6k&t=1416s
 let lastCache = 'restaurant-v1';
 // install sw
 self.addEventListener('install', event => {
@@ -50,9 +51,10 @@ self.addEventListener('activate', event => {
   );
 });
 
-// respond to cache
+// call fetch event and respond to cache
 self.addEventListener('fetch', event => {
   console.log('Service Worker: fetching');
+   // check if live site is available, if not, fetch
     event.respondWith(
       caches.match(event.request).then(response => {
         return response || fetch(event.request);
